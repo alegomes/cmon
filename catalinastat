@@ -1,0 +1,15 @@
+#!/bin/bash
+
+case "$1" in
+   start)
+      nice -20 /home/campos/catalinastat.sh 15 &
+      ;;
+   status)
+      ps aux | grep -i catalinastat | grep -v grep | grep -v status | grep -v tail
+      ;;
+   stop)
+      pkill catalinastat
+      ;;
+esac
+
+
