@@ -1,5 +1,24 @@
 C'Mon is a vmstat-like set of scripts to help you monitor Tomcat and JVM infos.
-  
+
+DISCLAIMER
+==========
+
+I made this script to help **ME** finding performance/scalability bottlenecks on Java WebApps. Making it generic enough was not part of my feature list. Feel free to adapt it to your needs and use it as you wish, but do not blame me if something goes wrong. This is it. 
+
+INSTALLING
+==========
+
+1. Copy '**.sh*' to any directory set in the PATH (e.g. /bin, /usr/local/bin ...).
+
+2. Drop '*cmon*' to /etc/init.d	and set it to start on boot time.
+
+USING BY EXAMPLE
+================
+
+$ ./cmon.sh 20
+
+This command will collect some Tomcat and JVM metrics on each 15 secs (not parameterized yet) and save it in a log file named name like /var/log/cmon.20101130.ale.log, where '20101130' is the current date in the format +%Y%m%d and 'ale' is the hostname. 
+
 >Date/Time             Load   AjpEst  AjpTw  MySQLEst  Young(%)  Old(%)  Perm(%)  YGC(#)  >FGC(#)  Threads(#)  ThRun(%)  ThBlk(%)  ThTw(%)
 > 30/11/2010 15:16:00   1.33   95      0      41        65,56     65,44   51,88    246     5       299         36        0         63
 > 30/11/2010 15:16:23   1.33   98      0      41        31,73     65,44   51,88    248     5       300         39        0         60
@@ -9,3 +28,24 @@ C'Mon is a vmstat-like set of scripts to help you monitor Tomcat and JVM infos.
 > 30/11/2010 15:18:06   3.37   106     0      41        83,60     73,29   52,00    259     5       301         40        0         59
 > 30/11/2010 15:18:29   3.34   113     0      41        10,64     74,77   52,00    262     5       301         39        0         60
 > 30/11/2010 15:18:55   2.70   111     0      41        53,48     77,89   52,00    264     5       300         42        0         57
+
+If load average value jumps 15 points up (not parameterized) from one collect to another, a thread dump is save in /var/log/threaddump.201011301626.JustBeforeLoadPeak.ale.txt.
+
+If load average goes above 20 points (script parameter $1), another thread dump is save in /var/log/threaddump.201011301628.ale.txt. 
+
+Collected metrics are:
+
+Date/Time
+Load
+AjpEst
+AjpTw
+MySQLEst
+Young(%)
+Old(%)
+Perm(%)
+YGC(#)
+FGC(#)
+Threads(#)
+ThRun(%)
+ThBlk(%)
+ThTw(%)
