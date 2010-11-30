@@ -1,5 +1,23 @@
 #!/bin/bash
 
+# Copyright 2010 Alexandre Gomes (alegomes at gmail)
+#
+# This file is part of Catalina Monitor (C'Mon) Suite.
+# 
+# C'Mon is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+# 
+# C'Mon is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with C'Mon.  If not, see <http://www.gnu.org/licenses/>.
+
+
 LOGDIR=/var/log
 #CATALINA_HOME=/Users/alegomes/workspace/sea/workshop_perftuning/liferay-portal-5.2-ee-sp4/tomcat-6.0.18
 CATALINA_HOME=/usr/local/liferay/tomcat
