@@ -35,17 +35,17 @@ If load average goes above 20 points (script parameter $1), another thread dump 
 
 Collected metrics are:
 
-Date/Time
-Load
-AjpEst
-AjpTw
-MySQLEst
-Young(%)
-Old(%)
-Perm(%)
-YGC(#)
-FGC(#)
-Threads(#)
-ThRun(%)
-ThBlk(%)
-ThTw(%)
+Date/Time - :-/
+Load - 1min Load Average
+AjpEst - Estabilished AJP Connections 
+AjpTw - Time Waited AJP Connections
+MySQLEst - Estabilished MySQL Connections
+Young(%) - Used Young Generation  
+Old(%) - Used Old Generation 
+Perm(%) - Used Permanet Generation 
+YGC(#) - Number of Young GCs
+FGC(#) - Number of Full GCs
+Threads(#) - Number of threads (estimated)
+ThRun(%) - Percentage of runnable threads
+ThBlk(%) - Percentage of blocked threads
+ThTw(%) - Percentage of time waited threads
