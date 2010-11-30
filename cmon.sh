@@ -22,7 +22,7 @@ LOGDIR=/var/log
 #CATALINA_HOME=/Users/alegomes/workspace/sea/workshop_perftuning/liferay-portal-5.2-ee-sp4/tomcat-6.0.18
 CATALINA_HOME=/usr/local/liferay/tomcat
 
-CATALINA_STAT=$LOGDIR/catalinastat
+CATALINA_STAT=$LOGDIR/cmon
 THREADDUMP_STAT=$LOGDIR/threaddump
 
 JSTAT_TEMP=/var/tmp/jstat.ale
@@ -31,7 +31,7 @@ THREADDUMP_TEMP=/var/tmp/threaddump.ale
 function usage() {
    
    echo
-   echo "./catalinastat.sh <load_threshold>" 
+   echo "./cmon.sh <load_threshold>" 
    echo
    exit -1
 }

@@ -25,9 +25,9 @@ function usage() {
    echo 
    echo 'Script que aponta os momentos de pico do load da maquina com Tomcat'
    echo
-   echo 'Uso: catalinastatanalyser.sh <arquivo_de_log> <load_de_referencia>'
+   echo 'Uso: cmonalyser.sh <arquivo_de_log> <load_de_referencia>'
    echo
-   echo 'E.g: ./catalinastatanalyser.sh /var/log/catalinastat.20101109.log 15' 
+   echo 'E.g: ./cmonalyser.sh /var/log/catalinastat.20101109.log 15' 
    echo
    exit -1
 
