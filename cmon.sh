@@ -116,7 +116,7 @@ function load() {
 	 fi
 
      #
-     # Imprime valores no arquivo $LOGDIR/javastat.${today}.log
+     # Print results in $LOGDIR/javastat.${today}.log
      #
 
      line=$(echo $HEADER \
@@ -148,7 +148,7 @@ function load() {
 
 
      #
-     # Verifica se houve pico de load. Em caso positivo, salva thread dump. 
+     # Check if there was a load spike. Saves a thread dump if any. 
      #
 
      overloaded=$(echo "$load > ${THRESHOLD}" | bc) 
@@ -172,7 +172,7 @@ function load() {
 
 ######################
 #
-# Inicio do script
+# Script start
 #
 ######################
 
