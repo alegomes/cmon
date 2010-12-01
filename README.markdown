@@ -3,7 +3,7 @@ C'Mon is a vmstat-like set of scripts to help you monitor Tomcat and JVM infos.
 DISCLAIMER
 ==========
 
-I made this script to help **ME** finding performance/scalability bottlenecks on Java WebApps. Making it generic enough was not part of my feature list. Feel free to adapt it to your needs and use it as you wish, but do not blame me if something goes wrong. This is it. 
+I made this script to help **ME** finding performance/scalability bottlenecks on Java WebApps. Making it generic enough was not part of any feature list. Feel free to adapt it to your needs and use it as you wish, but do not blame me if something goes wrong. This is it. 
 
 INSTALLING
 ==========
@@ -29,26 +29,26 @@ This command will collect some Tomcat and JVM metrics on each 15 secs (not param
 	30/11/2010 15:18:29   3.34   113     0      41        10,64     74,77   52,00    262     5       301         39        0         60
 	30/11/2010 15:18:55   2.70   111     0      41        53,48     77,89   52,00    264     5       300         42        0         57
 
-If load average value jumps 15 points up (not parameterized) from one collect to another, a thread dump is save in /var/log/threaddump.201011301626.JustBeforeLoadPeak.ale.txt.
+If load average value jumps 15 points up (not parameterized yet) from one collect to another, a thread dump is save in /var/log/threaddump.201011301626.JustBeforeLoadPeak.ale.txt.
 
 If load average goes above 20 points (script parameter $1), another thread dump is save in /var/log/threaddump.201011301628.ale.txt. 
 
 Collected metrics are:
 
-Date/Time - :-/
-Load - 1min Load Average
-AjpEst - Estabilished AJP Connections 
-AjpTw - Time Waited AJP Connections
-MySQLEst - Estabilished MySQL Connections
-Young(%) - Used Young Generation  
-Old(%) - Used Old Generation 
-Perm(%) - Used Permanet Generation 
-YGC(#) - Number of Young GCs
-FGC(#) - Number of Full GCs
-Threads(#) - Number of threads (estimated)
-ThRun(%) - Percentage of runnable threads
-ThBlk(%) - Percentage of blocked threads
-ThTw(%) - Percentage of time waited threads
+- Date/Time - :-/
+- Load - 1min Load Average
+- AjpEst - Estabilished AJP Connections 
+- AjpTw - Time Waited AJP Connections
+- MySQLEst - Estabilished MySQL Connections
+- Young(%) - Used Young Generation  
+- Old(%) - Used Old Generation 
+- Perm(%) - Used Permanet Generation 
+- YGC(#) - Number of Young GCs
+- FGC(#) - Number of Full GCs
+- Threads(#) - Number of threads (estimated)
+- ThRun(%) - Percentage of runnable threads
+- ThBlk(%) - Percentage of blocked threads
+- ThTw(%) - Percentage of time waited threads
 
 LICENSING
 =========
