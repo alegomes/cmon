@@ -17,7 +17,7 @@ USING BY EXAMPLE
 
 $ ./cmon.sh 20
 
-This command will collect some Tomcat and JVM metrics on each 15 secs (not parameterized yet) and save it in a log file named name like /var/log/cmon.20101130.ale.log, where '20101130' is the current date in the format +%Y%m%d and 'ale' is the hostname. 
+This command will collect some Tomcat and JVM metrics on each 15 secs (not parameterized yet) and save it in a log file named something like /var/log/cmon.20101130.ale.log, where '20101130' is the current date in the format +%Y%m%d and 'ale' is the hostname. 
 
 	Date/Time             Load   AjpEst  AjpTw  MySQLEst  Young(%)  Old(%)  Perm(%)  YGC(#) FGC(#)  Threads(#)  ThRun(%)  ThBlk(%)  ThTw(%)
 	30/11/2010 15:16:00   1.33   95      0      41        65,56     65,44   51,88    246     5       299         36        0         63
@@ -49,3 +49,10 @@ Threads(#) - Number of threads (estimated)
 ThRun(%) - Percentage of runnable threads
 ThBlk(%) - Percentage of blocked threads
 ThTw(%) - Percentage of time waited threads
+
+LICENSING
+=========
+
+This software is distributed under (GNU General Public License version 3)[http://www.gnu.org/licenses/gpl.txt].
+
+Copyright 2010 Alexandre Gomes (@alegomes, alegomes at gmail)
