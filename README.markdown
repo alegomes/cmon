@@ -52,7 +52,7 @@ Collected metrics are:
 
 TODO LIST
 =========
-* Paremeterize all hard coded stuff.
+* Paremeterize all the hard coded stuff.
 * Stop using _kill -3_ to generate thread dumps. It boosts catalina.out log file. Use _jstack_ instead. _kill -3_ is being used because _jstack_ didn't work at development time.
 * Aggregate memory capacity values.
 * Aggregate network and i/o traffic(?)
@@ -60,6 +60,6 @@ TODO LIST
 LICENSING
 =========
 
-This software is distributed under [GNU General Public License version 3(http://www.gnu.org/licenses/gpl.txt).
+This software is distributed under [GNU General Public License version 3](http://www.gnu.org/licenses/gpl.txt).
 
 Copyright 2010 Alexandre Gomes (@alegomes, alegomes at gmail)
